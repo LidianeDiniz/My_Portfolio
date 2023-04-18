@@ -1,5 +1,5 @@
 import { Container, InfoContainer, InfoItem, TextContainer } from './styles';
-import picture from '../../assets/Foto_perfil.jpg';
+import picture from '../../assets/Foto_perfil.png';
 
 function HomeHero() {
   return (
@@ -15,10 +15,13 @@ function HomeHero() {
         </TextContainer>
 
         <InfoContainer>
-          <span>Cargo</span>
-          <InfoItem>{`{ Desenvolvedora: Front-end Júnior }`}</InfoItem>
-          <span>Minhas Habilidades</span>
           <InfoItem>
+            <span>Especialidade : </span>
+            {`{ Desenvolvedora: Front-end Júnior }`}
+          </InfoItem>
+
+          <InfoItem>
+            <span>Minhas Habilidades</span>
             {`{ React| Typescript| Javascript | Nextjs | Styled-Components | Sass | WordPress }`}
           </InfoItem>
         </InfoContainer>

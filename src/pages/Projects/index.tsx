@@ -1,7 +1,9 @@
-import { useRouter } from 'next/Router';
-
-export default function Projects() {
-  const router = useRouter();
-
-  router.push('/projects');
+function Projects() {
+  return (
+    <div>
+      <h1>Olá</h1>
+    </div>
+  );
 }
+
+export default Projects;

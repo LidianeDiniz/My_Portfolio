@@ -3,34 +3,28 @@ import styled from 'styled-components';
 export const Container = styled.section`
   display: flex;
   width: 100%;
-  justify-content: center;
-  align-items: center;
   gap: 2rem;
   margin-top: 5rem;
 
   > img {
+    margin-bottom: 0.5rem;
     width: 40rem;
-    flex: 1;
+
     border-right: 10px solid ${({ theme }) => theme.primary};
     border-radius: 50%;
 
     //border: 10px solid ${({ theme }) => theme.primary};
-    background-color: transparent;
-
-    > div {
-      flex: 4;
-    }
   }
 
   @media (max-width: 1450px) {
     > img {
-      width: 30rem;
+      width: 27rem;
     }
   }
 
-  @media (max-width: 1000px) {
+  @media (max-width: 980px) {
     > img {
-      width: 20rem;
+      width: 22rem;
     }
   }
 
@@ -99,21 +93,59 @@ export const TextContainer = styled.section`
 
 export const InfoContainer = styled.span`
   color: #179bd7;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-self: self-start;
 `;
 
 export const InfoItem = styled.p`
-  color: #83b655;
-  width: 50;
-  height: 5rem;
-  padding: 0 auto;
+  font-size: 'JetBrains Mono', monospace;
+  font-weight: 300;
+  color: ${({ theme }) => theme.text_secondary};
+  width: auto;
+  height: 6.5rem;
+  padding: 1rem;
   background: linear-gradient(45deg, #293a4a, #151d25);
   margin-bottom: 0.5rem;
-  align-items: center;
-  justify-content: center;
-  display: flex;
+  align-self: flex-start;
+  transition: 1s;
+
   font-size: 1rem;
+
+  > span {
+    font-size: 'JetBrains Mono', monospace;
+    font-weight: 300;
+    color: ${({ theme }) => theme.secondary};
+
+    display: flex;
+    flex-direction: column;
+  }
 
   &:hover {
     background: linear-gradient(45deg, #21729b, #293a4a);
+  }
+
+  &:last-child {
+    margin-left: 10rem;
+    align-self: flex-end;
+  }
+
+  @media (max-width: 1450px) {
+    width: 18rem;
+    padding: 1.5rem;
+    font-size: 0.8rem;
+  }
+  @media (max-width: 980px) {
+    width: 100%;
+  }
+
+  @media (max-width: 680px) {
+    width: 100%;
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 `;
