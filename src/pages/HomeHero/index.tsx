@@ -1,5 +1,5 @@
-import { Container, TextContainer } from './styles';
-import picture from '../../assets/Foto_perfil.jpeg';
+import { Container, InfoContainer, InfoItem, TextContainer } from './styles';
+import picture from '../../assets/Foto_perfil.jpg';
 
 function HomeHero() {
   return (
@@ -13,6 +13,15 @@ function HomeHero() {
           <h1>Olá! </h1>
           <h2>Me chamo Lidiane!</h2>
         </TextContainer>
+
+        <InfoContainer>
+          <span>Cargo</span>
+          <InfoItem>{`{ Desenvolvedora: Front-end Júnior }`}</InfoItem>
+          <span>Minhas Habilidades</span>
+          <InfoItem>
+            {`{ React| Typescript| Javascript | Nextjs | Styled-Components | Sass | WordPress }`}
+          </InfoItem>
+        </InfoContainer>
       </div>
     </Container>
   );
