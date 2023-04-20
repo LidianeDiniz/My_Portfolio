@@ -86,7 +86,7 @@ export const TextContainer = styled.section`
     }
 
     h2 {
-      font-size: 0.9rem;
+      font-size: 1rem;
     }
   }
 `;
@@ -104,15 +104,15 @@ export const InfoItem = styled.p`
   font-size: 'JetBrains Mono', monospace;
   font-weight: 300;
   color: ${({ theme }) => theme.text_secondary};
-  width: auto;
-  height: 6.5rem;
+  width: 40rem;
+  height: 10rem;
   padding: 1rem;
-  background: linear-gradient(45deg, #293a4a, #151d25);
+  background: ${({ theme }) => theme.gradient_secondary};
   margin-bottom: 0.5rem;
   align-self: flex-start;
   transition: 1s;
 
-  font-size: 1rem;
+  font-size: 1.5rem;
 
   > span {
     font-size: 'JetBrains Mono', monospace;
@@ -133,17 +133,19 @@ export const InfoItem = styled.p`
   }
 
   @media (max-width: 1450px) {
-    width: 18rem;
-    padding: 1.5rem;
-    font-size: 0.8rem;
+    width: 100%;
+    padding: 0.5rem;
+
+    font-size: 1.5rem;
   }
   @media (max-width: 980px) {
     width: 100%;
+    font-size: 1.3rem;
   }
 
   @media (max-width: 680px) {
     width: 100%;
-    font-size: 0.8rem;
+    font-size: 1.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
