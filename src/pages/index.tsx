@@ -1,7 +1,9 @@
 import { HomeContainer } from '../styles/HomeStyles';
-import Experience from './components/Experience';
+import Certificate from './components/Certificates';
 import Header from './components/Header';
 import HomeHero from './components/HomeHero';
+import { Projects } from './components/Projects';
+import SkillItens from './components/SkillsLanguages';
 
 export default function Home() {
   return (
@@ -10,7 +12,9 @@ export default function Home() {
 
       <main className="container">
         <HomeHero />
-        <Experience />
+        <Certificate />
+        <Projects />
+        <SkillItens />
       </main>
     </HomeContainer>
   );
