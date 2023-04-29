@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
+export const Container = styled.section`
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -8,7 +8,7 @@ export const Container = styled.div`
   gap: 0.5rem;
 
   h1 {
-    color: ${({ theme }) => theme.primary};
+    color: ${({ theme }) => theme.textlight};
     font-size: 4.5rem;
   }
 

@@ -43,7 +43,7 @@ export const SkillItensContainer = styled.div`
   svg {
     width: 6.5rem;
     height: 6.5rem;
-    color: ${({ theme }) => theme.primary};
+    color: ${({ theme }) => theme.textlight};
     transition: 2s;
   }
 

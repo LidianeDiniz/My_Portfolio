@@ -1,4 +1,5 @@
 import picture from '../../assets/Foto_perfil.png';
+import Header from '../components/Header';
 
 import {
   Container,
@@ -14,6 +15,7 @@ import {
 
 const About = () => (
   <Container>
+    <Header />
     <ProfileImage
       src={picture}
       alt="Foto de perfil de uma mulher sorrindo ao lado de um computador "

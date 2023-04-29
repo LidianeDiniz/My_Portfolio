@@ -63,7 +63,7 @@ export const ProjectContainer = styled.div<ProjectProps>`
   &:hover {
     > section {
       > div.text {
-        right: -13rem;
+        right: -15rem;
       }
 
       > div.overlay {
@@ -112,7 +112,7 @@ export const ProjectContainer = styled.div<ProjectProps>`
     > div.text {
       position: absolute;
       top: 3rem;
-      right: -10rem;
+      right: -8rem;
       transition: 0ms.5s;
       width: fit-content;
 
@@ -146,7 +146,7 @@ export const ProjectContainer = styled.div<ProjectProps>`
 
     &:hover {
       > section > div.text {
-        left: -13rem;
+        left: -22rem;
       }
     }
   }
@@ -196,7 +196,7 @@ export const ProjectContainer = styled.div<ProjectProps>`
 
       &:hover {
         > section div.text {
-          left: 1rem;
+          left: 2rem;
         }
       }
     }
