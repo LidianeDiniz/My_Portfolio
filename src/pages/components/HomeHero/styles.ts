@@ -93,7 +93,7 @@ export const TextContainer = styled.section`
 
 export const InfoContainer = styled.span`
   color: #179bd7;
-
+  width: 40rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -104,13 +104,13 @@ export const InfoItem = styled.p`
   font-size: 'JetBrains Mono', monospace;
   font-weight: 300;
   color: ${({ theme }) => theme.text_secondary};
-  width: 40rem;
+
   height: 10rem;
-  padding: 1rem;
+  padding: 2rem;
   background: ${({ theme }) => theme.gradient_secondary};
   margin-bottom: 0.5rem;
   align-self: flex-start;
-  transition: 1s;
+  transition: 1s !important;
 
   font-size: 1.5rem;
 

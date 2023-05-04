@@ -3,7 +3,7 @@ import picture from '../../../assets/Foto_perfil.png';
 
 function HomeHero() {
   return (
-    <Container>
+    <Container data-aos="fade-up">
       <img
         src={picture}
         alt="Foto de perfil de uma mulher sorrindo ao lado de um computador "
@@ -15,13 +15,13 @@ function HomeHero() {
         </TextContainer>
 
         <InfoContainer>
-          <InfoItem>
+          <InfoItem data-aos="zoom-in-up">
             <span>Especialidades </span>
             <br />
             {`{ Desenvolvedora: Front-end Júnior }`}
           </InfoItem>
 
-          <InfoItem>
+          <InfoItem data-aos="zoom-in-up">
             <span>Minhas Habilidades </span>
             <br />
             {`{ React| Typescript| Javascript | Nextjs | Styled-Components | Sass | WordPress }`}

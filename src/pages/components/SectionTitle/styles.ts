@@ -8,14 +8,14 @@ export const Container = styled.section`
   gap: 0.5rem;
 
   h1 {
-    color: ${({ theme }) => theme.textlight};
-    font-size: 4.5rem;
+    color: ${({ theme }) => theme.text};
+    font-size: 2.5rem;
   }
 
   h2 {
     color: ${({ theme }) => theme.secondary};
     font-weight: 300;
-    font-size: 3.5rem;
+    font-size: 1.8rem;
   }
 
   @media (max-width: 980px) {

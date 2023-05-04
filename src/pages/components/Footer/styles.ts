@@ -17,7 +17,7 @@ export const Container = styled.footer`
     button {
       background: none;
       border: none;
-      color: ${({ theme }) => theme.text};
+      color: ${({ theme }) => theme.footer_background};
       text-transform: uppercase;
       font-weight: 300;
       font-size: 1.2rem;
