@@ -1,6 +1,7 @@
 import Link from 'next/Link';
 import { GrDeploy } from 'react-icons/gr';
 import { AiFillGithub } from 'react-icons/ai';
+
 import { Container } from './styles';
 
 interface ProjectItemProps {
@@ -23,13 +24,21 @@ export function ProjectItem({ title, type, imgUrl, slug }: ProjectItemProps) {
         </a>
       </Link>
 
-      <div>
+      <div className="LinkProjects">
         <button type="button">
-          Veja o Deploy <GrDeploy />
+          <Link href="https://projeto-coffe-delivery.vercel.app/">
+            <a target="_blank" rel="noreferrer">
+              Veja o Deploy <GrDeploy />
+            </a>
+          </Link>
         </button>
 
         <button type="button">
-          Repositório no Github <AiFillGithub />
+          <Link href="https://github.com/LidianeDiniz/Projeto-Coffe-Delivery">
+            <a target="_blank" rel="noreferrer">
+              Repositório no Github <AiFillGithub />
+            </a>
+          </Link>
         </button>
       </div>
     </Container>

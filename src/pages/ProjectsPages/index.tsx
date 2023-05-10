@@ -12,9 +12,9 @@ function ProjectsPage() {
       <Header />
       <main className="container">
         <ProjectItem
-          title="Projeto 01"
+          title="Projeto 0111"
           type="Coffe-Delivery"
-          slug="https://projeto-coffe-delivery.vercel.app"
+          slug="/https://projeto-coffe-delivery.vercel.app"
           imgUrl="https://github.com/LidianeDiniz/Projeto-Coffe-Delivery/blob/main/src/assets/screenchot-coffee.png?raw=true"
         />
 

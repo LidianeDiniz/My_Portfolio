@@ -10,7 +10,7 @@ export const Container = styled.div<ContainerProps>`
     width: 100%;
     background: url(${props => props.imgUrl}) no-repeat center;
     background-size: cover;
-    height: 10rem;
+    height: 13rem;
     padding: 1.5rem;
     display: flex;
     align-items: flex-end;
@@ -55,32 +55,45 @@ export const Container = styled.div<ContainerProps>`
     }
   }
 
-  > div button {
+  > .LinkProjects {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: flex-end;
-    flex-direction: row-reverse;
+    flex-direction: column;
     width: 100%;
-    height: 2rem;
+    height: 5rem;
     gap: 1rem;
 
-    background-color: ${({ theme }) => theme.background};
+    > button {
+      border: none;
+      background-color: ${({ theme }) => theme.background};
+    }
 
-    color: ${({ theme }) => theme.textlight};
-    font-size: 0.8rem;
-    border: none;
-    border-radius: 6px;
-    bottom: 1rem;
-    right: 1rem;
-    margin: 0;
-    transition: 0.5s;
+    > button a {
+      text-decoration: none;
+
+      color: ${({ theme }) => theme.textlight};
+      font-size: 0.8rem;
+      border: none;
+
+      bottom: 1rem;
+      right: 1rem;
+      margin: 0;
+      font-size: 18px;
+      font-weight: 300;
+
+      transition: 0.5s;
+
+      &:hover {
+        color: ${({ theme }) => theme.text};
+        font-weight: 600;
+        border-bottom: 0.1px solid ${({ theme }) => theme.border};
+        border-radius: 10px;
+      }
+    }
 
     svg path {
       fill: ${({ theme }) => theme.textlight};
-    }
-
-    &:hover {
-      background-color: ${({ theme }) => theme.text_secondary};
     }
 
     > div button svg {
