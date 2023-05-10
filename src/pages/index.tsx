@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
+import Head from 'next/head';
 import { HomeContainer } from '../styles/HomeStyles';
 import Certificate from './components/Certificates';
 import { Footer } from './components/Footer';
@@ -16,6 +17,9 @@ export default function Home() {
   }, []);
   return (
     <HomeContainer>
+      <Head>
+        <title>Página inicial</title>
+      </Head>
       <Header />
 
       <main className="container">

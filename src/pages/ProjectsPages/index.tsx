@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import { ProjectsContainer } from '../../styles/ProjectsStyles';
 import Header from '../components/Header';
 import { ProjectItem } from '../components/ProjectItem';
@@ -5,6 +6,9 @@ import { ProjectItem } from '../components/ProjectItem';
 function ProjectsPage() {
   return (
     <ProjectsContainer>
+      <Head>
+        <title>Meus projetos</title>
+      </Head>
       <Header />
       <main className="container">
         <ProjectItem

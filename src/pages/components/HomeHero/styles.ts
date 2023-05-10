@@ -105,7 +105,8 @@ export const InfoItem = styled.p`
   font-weight: 300;
   color: ${({ theme }) => theme.text_secondary};
 
-  height: 10rem;
+  height: 13rem;
+  width: auto;
   padding: 2rem;
   background: ${({ theme }) => theme.gradient_secondary};
   margin-bottom: 0.5rem;
