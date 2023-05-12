@@ -26,6 +26,7 @@ export const Container = styled.div<ContainerProps>`
 
       > div.overlay {
         opacity: 0.5;
+        cursor: not-allowed;
       }
     }
 
@@ -34,12 +35,14 @@ export const Container = styled.div<ContainerProps>`
       h1 {
         color: ${({ theme }) => theme.primary};
         font-size: 1.5rem;
+        cursor: not-allowed;
       }
 
       h2 {
         color: ${({ theme }) => theme.textlight};
         font-size: 1rem;
         font-weight: 300;
+        cursor: not-allowed;
       }
     }
 

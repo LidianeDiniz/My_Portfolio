@@ -16,4 +16,6 @@ function SectionTitle({ title, description }: SectionTitleProps) {
   );
 }
 
+
+
 export default SectionTitle;

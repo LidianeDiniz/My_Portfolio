@@ -4,28 +4,30 @@ export const Container = styled.div`
   margin-top: 5rem;
   width: 100%;
   display: flex;
-
+  align-items: center;
+  padding: 0 5rem;
   justify-content: center;
   flex-direction: row-reverse;
   flex-wrap: wrap;
-  align-items: flex-start;
 
   @media (max-width: 1450px) {
     > img {
-      width: 27rem;
+      width: 18rem;
     }
   }
 
   @media (max-width: 980px) {
     > img {
-      width: 22rem;
+      width: 15rem;
     }
   }
 
   @media (max-width: 680px) {
-    flex-direction: column-reverse;
+    flex-direction: column;
     display: flex;
     align-items: center;
+    justify-content: center;
+    width: 100%;
 
     > img {
       width: 15rem;
@@ -34,34 +36,47 @@ export const Container = styled.div`
 `;
 
 export const ProfileImage = styled.img`
-  width: 220px;
-  height: 220px;
-  border-radius: 50%;
+  width: 20rem;
+  height: 10rem;
+  border-radius: 15px;
+
   display: flex;
   position: relative;
   background-image: none;
+  justify-content: flex-end;
+  align-items: flex-end;
 `;
 
 export const TextContainer = styled.div`
   display: flex;
   flex-direction: column;
-  width: auto;
+  width: 100%;
   justify-content: center;
   align-items: center;
   margin-top: auto;
-  padding: 3rem;
+
+  .ContainerBox {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 2rem;
+
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+  }
 `;
 
 export const TextDescription = styled.div`
   height: auto;
-  background: ${({ theme }) => theme.gradient_secondary};
+
   width: 100%;
   border-radius: 18px;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+  align-items: center;
+  padding: 2rem;
+  background: ${({ theme }) => theme.gradient_secondary};
   margin-top: 2rem;
 
   border: 10px solid ${({ theme }) => theme.secondary};
@@ -75,7 +90,7 @@ export const TextDescription = styled.div`
 `;
 
 export const Subtitle = styled.h2`
-  font-size: 15px;
+  font-size: 1rem;
   color: ${({ theme }) => theme.textlight};
   margin-top: 3rem;
   margin-bottom: 3rem;
@@ -83,7 +98,15 @@ export const Subtitle = styled.h2`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 40rem;
+
+  @media (max-width: 680px) {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 0.8rem;
+  }
 `;
 
 export const InfoContainer = styled.div`

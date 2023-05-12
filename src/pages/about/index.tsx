@@ -16,16 +16,18 @@ import Header from '../components/Header';
 const About = () => (
   <Container>
     <Header />
-    <ProfileImage
-      data-aos="fade-left"
-      src={picture}
-      alt="Foto de perfil de uma mulher sorrindo ao lado de um computador "
-    />
     <TextContainer data-aos="zoom-out-right">
-      <SectionTitle
-        title="Conheça mais sobre mim."
-        description="E aí, galera! Aqui é a Lidiane, e sou desenvolvedora."
-      />
+      <div className="ContainerBox">
+        <ProfileImage
+          data-aos="fade-left"
+          src={picture}
+          alt="Foto de perfil de uma mulher sorrindo ao lado de um computador "
+        />
+        <SectionTitle
+          title="Conheça mais sobre mim."
+          description="E aí, galera! Aqui é a Lidiane, e sou desenvolvedora."
+        />
+      </div>
       <TextDescription>
         <Subtitle>
           <h2

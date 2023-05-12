@@ -21,11 +21,19 @@ export function Projects() {
           slug="https://github.com/LidianeDiniz/Desafio-01-carrinho-de-compras"
         />
         <ProjectsItem
-          title="Projeto Coffee Delivery"
+          title="Food Explorer"
           type="Website"
-          img="https://github.com/LidianeDiniz/Projeto-Coffe-Delivery/blob/main/src/assets/screenchot-coffee.png?raw=true"
-          slug="https://projeto-coffe-delivery.vercel.app"
+          img="https://github.com/LidianeDiniz/Frontend_FoodExplorer/blob/main/src/assets/imgPrincipal.png?raw=true"
+          slug="https://github.com/LidianeDiniz/Frontend_FoodExplorer"
         />
+
+        <ProjectsItem
+          title="Projeto Carrinhos de compras "
+          type="Website"
+          img="https://user-images.githubusercontent.com/80908772/200186782-e68d1a7a-f5b9-4ed8-8409-00dc994e81da.png"
+          slug="https://github.com/LidianeDiniz/Desafio-01-carrinho-de-compras"
+        />
+
         <ProjectsItem
           title="Projeto Carrinhos de compras "
           type="Website"

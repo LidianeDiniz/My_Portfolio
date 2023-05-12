@@ -9,12 +9,19 @@ interface ProjectItemProps {
   type: string;
   imgUrl: string;
   slug: string;
+  repUrl: string;
 }
 
-export function ProjectItem({ title, type, imgUrl, slug }: ProjectItemProps) {
+export function ProjectItem({
+  title,
+  type,
+  imgUrl,
+  slug,
+  repUrl
+}: ProjectItemProps) {
   return (
     <Container imgUrl={imgUrl}>
-      <Link href={`/ProjectsPages/${slug}`}>
+      <Link href="">
         <a href="">
           <div className="overlay" />
           <section>
@@ -26,7 +33,7 @@ export function ProjectItem({ title, type, imgUrl, slug }: ProjectItemProps) {
 
       <div className="LinkProjects">
         <button type="button">
-          <Link href="https://projeto-coffe-delivery.vercel.app/">
+          <Link href={slug}>
             <a target="_blank" rel="noreferrer">
               Veja o Deploy <GrDeploy />
             </a>
@@ -34,7 +41,7 @@ export function ProjectItem({ title, type, imgUrl, slug }: ProjectItemProps) {
         </button>
 
         <button type="button">
-          <Link href="https://github.com/LidianeDiniz/Projeto-Coffe-Delivery">
+          <Link href={repUrl}>
             <a target="_blank" rel="noreferrer">
               Repositório no Github <AiFillGithub />
             </a>
