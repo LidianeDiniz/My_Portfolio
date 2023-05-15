@@ -1,4 +1,4 @@
-import Link from 'next/Link';
+import Link from 'next/link';
 import SectionTitle from '../SectionTitle';
 import { ProjectsItem } from './ProjectsItem';
 import { Container } from './styles';
