@@ -3,21 +3,43 @@ import styled from 'styled-components';
 export const Container = styled.section`
   width: 100%;
 
+  > div .containerTitle {
+    display: flex;
+  }
+
   > section {
     width: 100%;
     margin-top: 7rem;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap: 1.5rem;
+    padding-bottom: 8rem;
+    justify-items: center;
+    align-items: center;
+    border-bottom: 10px solid ${({ theme }) => theme.primary};
 
     padding-bottom: 8rem;
     border-bottom: 10px solid ${({ theme }) => theme.primary};
 
     @media (max-width: 980px) {
       gap: 1rem;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media (max-width: 780px) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      margin-top: 5rem;
+      left: auto;
+      gap: 2rem;
     }
 
     @media (max-width: 680px) {
-      flex-direction: column;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
       margin-top: 5rem;
       gap: 2rem;
     }
@@ -27,14 +49,19 @@ export const Container = styled.section`
 export const ItemContainer = styled.div`
   > div {
     background: ${({ theme }) => theme.gradient_secondary};
-    padding: 1rem;
+    padding: 2rem;
     padding-top: 2.5rem;
-    height: 20rem;
+    height: 25rem;
+    width: 20rem;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: flex-start;
+    justify-content: space-around;
     transition: 0.5s;
+
+    &:hover {
+      cursor: default;
+    }
 
     h1 {
       color: ${({ theme }) => theme.text_secondary};

@@ -6,7 +6,7 @@ This is a portfolio website built using ![React](https://img.shields.io/badge/-R
 
 To install and run the project, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/user/repo.git`
+1. Clone the repository: `git clone https://github.com/LidianeDiniz/My_Portifolio.git`
 2. Install dependencies: `npm install`
 3. Run the development server: `npm run dev`
 4. Open `http://localhost:3000` in your browser

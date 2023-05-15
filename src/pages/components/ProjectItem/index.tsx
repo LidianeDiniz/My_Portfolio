@@ -10,6 +10,7 @@ interface ProjectItemProps {
   imgUrl: string;
   slug: string;
   repUrl: string;
+  isSubmitting?: boolean;
 }
 
 export function ProjectItem({
@@ -17,7 +18,8 @@ export function ProjectItem({
   type,
   imgUrl,
   slug,
-  repUrl
+  repUrl,
+  isSubmitting
 }: ProjectItemProps) {
   return (
     <Container imgUrl={imgUrl}>
@@ -42,7 +44,11 @@ export function ProjectItem({
 
         <button type="button">
           <Link href={repUrl}>
-            <a target="_blank" rel="noreferrer">
+            <a
+              target="_blank"
+              rel="noreferrer"
+              style={{ cursor: isSubmitting ? 'not-allowed' : 'pointer' }}
+            >
               Repositório no Github <AiFillGithub />
             </a>
           </Link>

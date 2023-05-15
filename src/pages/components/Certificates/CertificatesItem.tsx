@@ -1,4 +1,5 @@
 import * as Icon from 'phosphor-react';
+import Link from 'next/dist/client/link';
 import { ItemContainer } from './styles';
 
 interface CertificatesProps {
@@ -6,13 +7,15 @@ interface CertificatesProps {
   title: string;
   description: string;
   icon?: Icon.IconProps;
+  slug?: string;
 }
 
-function ExperiencieItem({
+function CerificateItem({
   year,
   title,
   description,
-  icon
+  icon,
+  slug
 }: CertificatesProps) {
   return (
     <ItemContainer data-aos="zoom-in-up">
@@ -20,10 +23,14 @@ function ExperiencieItem({
         <h1>{year}</h1>
         <h2>{title}</h2>
         <p>{description}</p>
-        <span>{icon}</span>
+        <Link href={slug}>
+          <a target="_blank" rel="noreferrer">
+            <span>{icon}</span>
+          </a>
+        </Link>
       </div>
     </ItemContainer>
   );
 }
 
-export default ExperiencieItem;
+export default CerificateItem;

@@ -40,18 +40,20 @@ const About = () => (
             com vocês. Recentemente comecei minha carreira nessa área incrível e
             estou amando cada segundo. Minha paixão é trabalhar com React.js e
             explorar todas as possibilidades que ele oferece para criar
-            interfaces de usuário incríveis. Atualmente, estou me concentrando
-            em aprimorar minhas habilidades em desenvolvimento front-end, mas
-            também estou super animada para aprender mais sobre back-end e quero
-            começar a explorar o mundo do Node.js em breve. Sinto que estou no
-            caminho certo e estou muito feliz por estar aqui, fazendo parte
-            dessa comunidade incrível. Espero contribuir com minha equipe e
-            aprender muito ao longo do caminho. Vamos juntos nessa! Estou muito
-            orgulhosa do meu trabalho e dos projetos que tenho realizado. Se
-            você está procurando por alguém que seja comprometido, dedicado e
-            apaixonado pelo que faz, não hesite em entrar em contato comigo.
-            Será um prazer trabalhar juntos em projetos desafiadores e
-            contribuir para seu sucesso.
+            interfaces de usuário incríveis. <br />
+            Atualmente, estou me concentrando em aprimorar minhas habilidades em
+            desenvolvimento front-end, mas também estou super animada para
+            aprender mais sobre back-end e quero começar a explorar o mundo do
+            Node.js em breve. <br />
+            Sinto que estou no caminho certo e estou muito feliz por estar aqui,
+            fazendo parte dessa comunidade incrível. <br />
+            Espero contribuir com minha equipe e aprender muito ao longo do
+            caminho. Vamos juntos nessa! <br /> Estou muito orgulhosa do meu
+            trabalho e dos projetos que tenho realizado. Se você está procurando
+            por alguém que seja comprometida, dedicada e apaixonada pelo que
+            faz, então não hesite em entrar em contato comigo, será um prazer
+            trabalharmos juntos em projetos desafiadores e contribuir para seu
+            sucesso.
           </h2>
         </Subtitle>
       </TextDescription>

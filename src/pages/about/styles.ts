@@ -36,7 +36,7 @@ export const Container = styled.div`
 `;
 
 export const ProfileImage = styled.img`
-  width: 20rem;
+  width: 15rem;
   height: 10rem;
   border-radius: 15px;
 
@@ -64,6 +64,42 @@ export const TextContainer = styled.div`
 
     margin-bottom: 3rem;
     margin-top: 3rem;
+
+    @media (max-width: 680px) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      margin-bottom: auto;
+    }
+
+    @media (max-width: 480px) {
+      > img {
+        display: none;
+      }
+    }
+
+    > section {
+      @media (max-width: 980px) {
+        h1 {
+          font-size: 2rem;
+        }
+
+        h2 {
+          font-size: 1.5rem;
+        }
+      }
+
+      @media (max-width: 680px) {
+        h1 {
+          font-size: 1.5rem;
+        }
+
+        h2 {
+          font-size: 1.3rem;
+        }
+      }
+    }
   }
 `;
 
@@ -90,7 +126,7 @@ export const TextDescription = styled.div`
 `;
 
 export const Subtitle = styled.h2`
-  font-size: 1rem;
+  font-size: 1.3rem;
   color: ${({ theme }) => theme.textlight};
   margin-top: 3rem;
   margin-bottom: 3rem;
@@ -99,18 +135,15 @@ export const Subtitle = styled.h2`
   justify-content: center;
   align-items: center;
 
-  @media (max-width: 680px) {
-    flex-direction: column;
+  @media (max-width: 980px) {
+    font-size: 0.8rem;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
-    font-size: 0.8rem;
   }
-`;
 
-export const InfoContainer = styled.div`
-  display: flex;
-  gap: 1rem;
-  margin-top: 1rem;
+  @media (max-width: 680px) {
+    font-size: 0.5rem;
+  }
 `;

@@ -4,41 +4,58 @@ export const Container = styled.div`
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  padding: 5rem;
   flex-direction: column;
   color: ${({ theme }) => theme.backgroundLight};
   margin-top: 10rem;
 
-  ul {
-    display: flex;
-    padding: 0 auto;
-    align-items: center;
-    justify-content: flex-start;
+  @media (max-width: 680px) {
+    grid-column: 1;
+  }
+
+  > form {
     width: 100%;
-    gap: 2rem;
+    margin-bottom: 5rem;
+  }
+
+  ul {
+    width: 100%;
+    display: flex;
+
+    align-items: center;
+    justify-content: flex-end;
+    gap: 5rem;
     text-decoration: none;
     cursor: pointer;
-
+    margin-top: 5rem;
+    margin-bottom: -5rem;
     font-size: 2rem;
+  }
+`;
 
-    li a {
-      color: ${({ theme }) => theme.secondary};
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 1rem;
-      transition: 0.5s;
+export const Button = styled.button`
+  width: 100%;
+  display: flex;
 
-      &:hover {
-        color: ${({ theme }) => theme.textlight};
-        gap: 0.5rem;
-        font-size: 1.9rem;
-      }
-    }
+  align-items: center;
+  justify-content: flex-end;
+  gap: 5rem;
+  text-decoration: none;
+  cursor: pointer;
+  margin-top: 5rem;
 
-    svg {
-      width: 2rem;
-      height: 2rem;
-    }
+  font-size: 2rem;
+  background-color: transparent;
+  border: none;
+  color: ${({ theme }) => theme.secondary};
+
+  gap: 1rem;
+  transition: 0.5s;
+
+  &:hover {
+    color: ${({ theme }) => theme.primary};
+    gap: 0.5rem;
+    font-size: 1.9rem;
   }
 `;
