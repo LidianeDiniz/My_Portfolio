@@ -1,4 +1,4 @@
-import Link from 'next/Link';
+import Link from 'next/link';
 import { GrDeploy } from 'react-icons/gr';
 import { AiFillGithub } from 'react-icons/ai';
 
