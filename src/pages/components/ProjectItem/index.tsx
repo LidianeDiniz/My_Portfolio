@@ -1,7 +1,7 @@
-import Link from 'next/link';
 import { GrDeploy } from 'react-icons/gr';
 import { AiFillGithub } from 'react-icons/ai';
 
+import Link from 'next/link';
 import { Container } from './styles';
 
 interface ProjectItemProps {
