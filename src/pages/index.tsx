@@ -1,7 +1,7 @@
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import Head from 'next/head';
-import { useEffect } from 'React';
+import { useEffect } from 'react';
 import { HomeContainer } from '../styles/HomeStyles';
 import Certificate from './components/Certificates';
 import { Footer } from './components/Footer';
