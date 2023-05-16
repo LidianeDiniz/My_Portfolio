@@ -26,10 +26,7 @@ export const Container = styled.section`
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       left: auto;
-
     }
-
-
 
     @media (max-width: 780px) {
       display: grid;
@@ -40,7 +37,6 @@ export const Container = styled.section`
     }
 
     @media (max-width: 680px) {
-
       display: flex;
       flex-wrap: wrap;
       justify-content: center;

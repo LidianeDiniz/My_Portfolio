@@ -39,12 +39,11 @@ export const Container = styled.div`
     font-size: 2rem;
 
     @media (max-width: 680px) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-
-  }
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+    }
   }
 `;
 
