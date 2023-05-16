@@ -21,11 +21,15 @@ export const Container = styled.section`
     padding-bottom: 8rem;
     border-bottom: 10px solid ${({ theme }) => theme.primary};
 
-    @media (max-width: 980px) {
+    @media (max-width: 1180px) {
       gap: 1rem;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
+      left: auto;
+
     }
+
+
 
     @media (max-width: 780px) {
       display: grid;
@@ -36,6 +40,7 @@ export const Container = styled.section`
     }
 
     @media (max-width: 680px) {
+
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
@@ -125,6 +130,7 @@ export const ItemContainer = styled.div`
       > div {
         height: auto;
         padding: 2rem;
+        max-width: 100%;
 
         h1 {
           font-size: 2rem;

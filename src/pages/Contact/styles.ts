@@ -10,8 +10,14 @@ export const Container = styled.div`
   color: ${({ theme }) => theme.backgroundLight};
   margin-top: 10rem;
 
+  @media (max-width: 980px) {
+    grid-column: 1;
+    margin-top: 1rem;
+  }
+
   @media (max-width: 680px) {
     grid-column: 1;
+    margin-top: 1rem;
   }
 
   > form {
@@ -31,6 +37,14 @@ export const Container = styled.div`
     margin-top: 5rem;
     margin-bottom: -5rem;
     font-size: 2rem;
+
+    @media (max-width: 680px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+
+  }
   }
 `;
 
