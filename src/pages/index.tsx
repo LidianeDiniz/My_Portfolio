@@ -1,7 +1,7 @@
-import { useEffect } from 'react';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import Head from 'next/head';
+import { useEffect } from 'React';
 import { HomeContainer } from '../styles/HomeStyles';
 import Certificate from './components/Certificates';
 import { Footer } from './components/Footer';
@@ -11,7 +11,7 @@ import HomeHero from './components/HomeHero';
 import { Projects } from './components/Projects';
 import SkillItens from './components/SkillsLanguages';
 
-export default function Home() {
+function Home() {
   useEffect(() => {
     Aos.init({ duration: 1500 });
   }, []);
@@ -34,3 +34,5 @@ export default function Home() {
     </HomeContainer>
   );
 }
+
+export default Home;
