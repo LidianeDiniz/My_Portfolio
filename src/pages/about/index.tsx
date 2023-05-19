@@ -8,10 +8,10 @@ import {
   TextContainer,
   ProfileImage,
   TextDescription
-} from './styles';
-import SectionTitle from '../components/SectionTitle';
-import { Footer } from '../components/Footer';
-import Header from '../components/Header';
+} from '../../styles/AboutStyles';
+import SectionTitle from '../../components/SectionTitle';
+import { Footer } from '../../components/Footer';
+import Header from '../../components/Header';
 
 const About = () => (
   <Container>
@@ -20,8 +20,7 @@ const About = () => (
       <div className="ContainerBox">
         <ProfileImage
           data-aos="fade-left"
-          src={picture}
-          alt="Foto de perfil de uma mulher sorrindo ao lado de um computador "
+        src='/images/Foto_perfil.png' height={120} width={120}
         />
         <SectionTitle
           title="Conheça mais sobre mim."

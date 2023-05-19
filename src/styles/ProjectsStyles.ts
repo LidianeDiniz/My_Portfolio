@@ -1,25 +1,46 @@
 import styled from 'styled-components';
 
+
 export const ProjectsContainer = styled.div`
-  display: flex;
-  flex-direction: column;
   width: 100%;
-  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 1rem;
+  margin-bottom: auto;
 
-  > main {
-    margin-top: 5rem;
-    margin-bottom: 5rem;
+  .container {
+    display: flex;
+    margin-top: auto;
+    justify-content: center;
     width: 100%;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1.5rem;
+    margin-top: 2rem;
+    padding: 0 auto;
 
-    @media (max-width: 980px) {
-      grid-template-columns: 1fr 1fr;
+    div.Title {
+      h1 {
+        color: ${({ theme }) => theme.primary};
+        font-size: 2rem;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+      }
+
+      h2 {
+        color: ${({ theme }) => theme.textlight};
+        font-size: 1.5rem;
+        font-weight: 300;
+      }
     }
 
-    @media (max-width: 580px) {
-      grid-template-columns: 1fr;
-    }
+    justify-content: center;
+    flex-direction: column;
   }
+`;
+
+export const ProjectsItensContainer = styled.div`
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2rem;
+  margin-top: 5rem;
 `;

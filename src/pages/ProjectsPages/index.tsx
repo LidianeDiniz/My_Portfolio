@@ -1,9 +1,8 @@
 import Head from 'next/head';
-
-import Header from '../components/Header';
-import { ProjectItem } from '../components/ProjectItem';
-import SectionTitle from '../components/SectionTitle';
-import { ProjectsContainer, ProjectsItensContainer } from './styles';
+import Header from '../../components/Header';
+import { ProjectItem } from '../../components/ProjectItem';
+import SectionTitle from '../../components/SectionTitle';
+import { ProjectsContainer, ProjectsItensContainer } from '../../styles/ProjectsStyles';
 
 function ProjectsPage() {
   return (
@@ -27,7 +26,7 @@ function ProjectsPage() {
             type="Coffe-Delivery"
             slug="https://projeto-coffe-delivery.vercel.app"
             imgUrl="https://github.com/LidianeDiniz/Projeto-Coffe-Delivery/blob/main/src/assets/screenchot-coffee.png?raw=true"
-            repUrl=""
+            repUrl="https://github.com/LidianeDiniz/Projeto-Coffe-Delivery.git"
           />
 
           <ProjectItem

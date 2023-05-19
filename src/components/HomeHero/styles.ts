@@ -14,6 +14,13 @@ export const Container = styled.section`
     border-radius: 50%;
 
     //border: 10px solid ${({ theme }) => theme.primary};
+
+     .main {
+    display: flex;
+    flex-direction: column;
+
+    gap: 8rem;
+  }
   }
 
   @media (max-width: 1450px) {

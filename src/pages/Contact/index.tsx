@@ -1,11 +1,12 @@
 import { FaWhatsapp } from 'react-icons/fa';
 import { AiFillLinkedin } from 'react-icons/ai';
 import Head from 'next/head';
-import Form from '../components/FormContact/Form';
-import Header from '../components/Header';
-import SectionTitle from '../components/SectionTitle';
-import { Button, Container } from './styles';
-import { Footer } from '../components/Footer/index';
+import Form from '../../components/FormContact/Form';
+import Header from '../../components/Header';
+import SectionTitle from '../../components/SectionTitle';
+
+import { Footer } from '../../components/Footer/index';
+import { Container, Button } from '../../styles/ContactStyles';
 
 function Contact() {
   function handleRedirect(url: string) {
@@ -13,7 +14,7 @@ function Contact() {
   }
   return (
     <div>
-      <Head>
+      <Head >        
         <title>Fale comigo</title>
       </Head>
       <Header />

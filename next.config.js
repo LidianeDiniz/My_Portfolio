@@ -1,10 +1,11 @@
-const withImages = require('next-images');
 
-module.exports = withImages({
-  esModule: true
-});
+/** @type {import('next').NextConfig} */
+const nextConfig = {
 
-// /** @type {import('next').NextConfig} */
-// const nextConfig = {}
+  experimental:{
+    newNextLinkBehavior: false,
+   
+  }
+}
 
-// module.exports = nextConfig
+module.exports = nextConfig

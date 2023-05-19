@@ -1,12 +1,13 @@
 import * as Icon from 'phosphor-react';
 import Link from 'next/dist/client/link';
 import { ItemContainer } from './styles';
+import { ReactNode } from 'react';
 
 interface CertificatesProps {
   year: number | string;
   title: string;
   description: string;
-  icon?: Icon.IconProps;
+  icon?: ReactNode;
   slug?: string;
 }
 

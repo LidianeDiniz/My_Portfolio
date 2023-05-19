@@ -1,11 +1,11 @@
 import { Container, InfoContainer, InfoItem, TextContainer } from './styles';
-import picture from '../../../assets/Foto_perfil.png';
+import picture from '../../assets/Foto_perfil.png';
 
 function HomeHero() {
   return (
     <Container data-aos="fade-up">
       <img
-        src={picture}
+        src={picture.src}
         alt="Foto de perfil de uma mulher sorrindo ao lado de um computador "
       />
       <div>

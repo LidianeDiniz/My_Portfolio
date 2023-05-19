@@ -2,26 +2,29 @@ import Aos from 'aos';
 import 'aos/dist/aos.css';
 import Head from 'next/head';
 import { useEffect } from 'react';
-import { HomeContainer } from '../styles/HomeStyles';
-import Certificate from './components/Certificates';
-import { Footer } from './components/Footer';
-import FormContact from './components/FormContact';
-import Header from './components/Header';
-import HomeHero from './components/HomeHero';
-import { Projects } from './components/Projects';
-import SkillItens from './components/SkillsLanguages';
+import Header from '../components/Header';
+import HomeHero from '../components/HomeHero';
+import Certificate from '../components/Certificates';
+import FormContact from '../components/FormContact';
+import { Footer } from '../components/Footer';
+import { Projects } from '../components/Projects';
+import SkillItens from '../components/SkillsLanguages';
 
-function Home() {
+import { HomeContainer } from '../styles/HomeStyles';
+
+
+export default function Home() {
   useEffect(() => {
     Aos.init({ duration: 1500 });
   }, []);
   return (
-    <HomeContainer>
+   <HomeContainer>
       <Head>
         <title>Página inicial</title>
       </Head>
-      <Header />
 
+      <Header />
+   
       <main className="container">
         <HomeHero />
         <Certificate />
@@ -29,10 +32,11 @@ function Home() {
         <SkillItens />
         <FormContact />
       </main>
+    
 
       <Footer />
-    </HomeContainer>
+   </HomeContainer>
   );
 }
 
-export default Home;
+
