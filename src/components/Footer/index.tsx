@@ -1,6 +1,6 @@
-import { AiOutlineGithub, AiFillLinkedin } from 'react-icons/ai';
-import { FaArrowCircleUp } from 'react-icons/fa';
-import { Container } from './styles';
+import { AiOutlineGithub, AiFillLinkedin } from "react-icons/ai";
+import { FaArrowCircleUp } from "react-icons/fa";
+import { Container } from "./styles";
 
 export function Footer() {
   function handleRedirect(url: string) {
@@ -10,7 +10,7 @@ export function Footer() {
   function handleScrollTop() {
     window.scroll({
       top: 0,
-      behavior: 'smooth'
+      behavior: "smooth",
     });
   }
   return (
@@ -24,12 +24,12 @@ export function Footer() {
           <AiFillLinkedin
             onClick={() =>
               handleRedirect(
-                'https://www.linkedin.com/in/lidiane-cristina-diniz/'
+                "https://www.linkedin.com/in/lidiane-cristina-diniz/"
               )
             }
           />
           <AiOutlineGithub
-            onClick={() => handleRedirect('https://github.com/LidianeDiniz')}
+            onClick={() => handleRedirect("https://github.com/LidianeDiniz")}
           />
         </section>
       </div>
