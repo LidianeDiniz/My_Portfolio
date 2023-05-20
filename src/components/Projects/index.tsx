@@ -1,7 +1,7 @@
-import Link from 'next/link';
-import SectionTitle from '../SectionTitle';
-import { ProjectsItem } from './ProjectsItem';
-import { Container } from './styles';
+import Link from "next/link";
+import SectionTitle from "../SectionTitle";
+import { ProjectsItem } from "./ProjectsItem";
+import { Container } from "./styles";
 
 export function Projects() {
   return (

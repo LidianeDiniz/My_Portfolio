@@ -1,12 +1,12 @@
-import { FaWhatsapp } from 'react-icons/fa';
-import { AiFillLinkedin } from 'react-icons/ai';
-import Head from 'next/head';
-import Form from '../../components/FormContact/Form';
-import Header from '../../components/Header';
-import SectionTitle from '../../components/SectionTitle';
+import { FaWhatsapp } from "react-icons/fa";
+import { AiFillLinkedin } from "react-icons/ai";
+import Head from "next/head";
+import Form from "../../components/FormContact/Form";
+import Header from "../../components/Header";
+import SectionTitle from "../../components/SectionTitle";
 
-import { Footer } from '../../components/Footer/index';
-import { Container, Button } from '../../styles/ContactStyles';
+import { Footer } from "../../components/Footer/index";
+import { Container, Button } from "../../styles/ContactStyles";
 
 function Contact() {
   function handleRedirect(url: string) {
@@ -14,7 +14,7 @@ function Contact() {
   }
   return (
     <div>
-      <Head >        
+      <Head>
         <title>Fale comigo</title>
       </Head>
       <Header />
@@ -45,7 +45,7 @@ function Contact() {
         <ul>
           <li>
             <Button
-              onClick={() => handleRedirect('https://contate.me/lidiane_dev')}
+              onClick={() => handleRedirect("https://contate.me/lidiane_dev")}
             >
               WhatsApp
               <FaWhatsapp />
@@ -55,7 +55,7 @@ function Contact() {
             <Button
               onClick={() =>
                 handleRedirect(
-                  'https://www.linkedin.com/in/lidiane-cristina-diniz/'
+                  "https://www.linkedin.com/in/lidiane-cristina-diniz/"
                 )
               }
             >

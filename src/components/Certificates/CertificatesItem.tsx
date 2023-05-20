@@ -1,7 +1,6 @@
-import * as Icon from 'phosphor-react';
-import Link from 'next/dist/client/link';
-import { ItemContainer } from './styles';
-import { ReactNode } from 'react';
+import Link from "next/dist/client/link";
+import { ReactNode } from "react";
+import { ItemContainer } from "./styles";
 
 interface CertificatesProps {
   year: number | string;
@@ -16,7 +15,7 @@ function CerificateItem({
   title,
   description,
   icon,
-  slug
+  slug,
 }: CertificatesProps) {
   return (
     <ItemContainer data-aos="zoom-in-up">

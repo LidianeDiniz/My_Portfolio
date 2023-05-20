@@ -1,8 +1,11 @@
-import Head from 'next/head';
-import Header from '../../components/Header';
-import { ProjectItem } from '../../components/ProjectItem';
-import SectionTitle from '../../components/SectionTitle';
-import { ProjectsContainer, ProjectsItensContainer } from '../../styles/ProjectsStyles';
+import Head from "next/head";
+import Header from "../../components/Header";
+import { ProjectItem } from "../../components/ProjectItem";
+import SectionTitle from "../../components/SectionTitle";
+import {
+  ProjectsContainer,
+  ProjectsItensContainer,
+} from "../../styles/ProjectsStyles";
 
 function ProjectsPage() {
   return (

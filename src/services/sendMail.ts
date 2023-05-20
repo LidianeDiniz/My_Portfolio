@@ -1,4 +1,4 @@
-import axios from 'axios';
+import axios from "axios";
 
 export const sendContactMail = async (
   name: string,
@@ -8,11 +8,11 @@ export const sendContactMail = async (
   const data = {
     name,
     senderMail,
-    content
+    content,
   };
 
   try {
-    return await axios.post('/api/contact', data);
+    return await axios.post("/api/contact", data);
   } catch (error) {
     return error;
   }

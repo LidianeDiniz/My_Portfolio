@@ -1,5 +1,5 @@
-import { darken } from 'polished';
-import styled from 'styled-components';
+import { darken } from "polished";
+import styled from "styled-components";
 
 interface ProjectProps {
   imgUrl: string;
@@ -96,7 +96,7 @@ export const ProjectContainer = styled.div<ProjectProps>`
   > section {
     width: 50rem;
     height: 100%;
-    background: url(${props => props.imgUrl}) no-repeat center;
+    background: url(${(props) => props.imgUrl}) no-repeat center;
     background-size: cover;
     position: relative;
 

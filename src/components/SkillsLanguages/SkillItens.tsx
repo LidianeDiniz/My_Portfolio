@@ -1,5 +1,5 @@
-import { ReactNode } from 'react';
-import { SkillItensContainer } from './styles';
+import { ReactNode } from "react";
+import { SkillItensContainer } from "./styles";
 
 interface SkillProps {
   title: string;

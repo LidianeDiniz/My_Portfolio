@@ -1,5 +1,5 @@
-import { Container } from './styles';
-import { ReactNode } from 'react';
+import { ReactNode } from "react";
+import { Container } from "./styles";
 
 interface SectionTitleProps {
   title: string | ReactNode;

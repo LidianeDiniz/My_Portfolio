@@ -1,8 +1,8 @@
-import { GrDeploy } from 'react-icons/gr';
-import { AiFillGithub } from 'react-icons/ai';
+import { GrDeploy } from "react-icons/gr";
+import { AiFillGithub } from "react-icons/ai";
 
-import Link from 'next/link';
-import { Container } from './styles';
+import Link from "next/link";
+import { Container } from "./styles";
 
 interface ProjectItemProps {
   title: string;
@@ -19,7 +19,7 @@ export function ProjectItem({
   imgUrl,
   slug,
   repUrl,
-  isSubmitting
+  isSubmitting,
 }: ProjectItemProps) {
   return (
     <Container imgUrl={imgUrl}>
@@ -47,7 +47,7 @@ export function ProjectItem({
             <a
               target="_blank"
               rel="noreferrer"
-              style={{ cursor: isSubmitting ? 'not-allowed' : 'pointer' }}
+              style={{ cursor: isSubmitting ? "not-allowed" : "pointer" }}
             >
               Repositório no Github <AiFillGithub />
             </a>

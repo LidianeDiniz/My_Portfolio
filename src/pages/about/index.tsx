@@ -1,5 +1,5 @@
 // import Head from 'next/head';
-import picture from '../../assets/Foto_perfil.png';
+// import picture from '../../assets/Foto_perfil.png';
 // import Header from '../components/Header';
 
 import {
@@ -7,11 +7,11 @@ import {
   Subtitle,
   TextContainer,
   ProfileImage,
-  TextDescription
-} from '../../styles/AboutStyles';
-import SectionTitle from '../../components/SectionTitle';
-import { Footer } from '../../components/Footer';
-import Header from '../../components/Header';
+  TextDescription,
+} from "../../styles/AboutStyles";
+import SectionTitle from "../../components/SectionTitle";
+import { Footer } from "../../components/Footer";
+import Header from "../../components/Header";
 
 const About = () => (
   <Container>
@@ -20,7 +20,9 @@ const About = () => (
       <div className="ContainerBox">
         <ProfileImage
           data-aos="fade-left"
-        src='/images/Foto_perfil.png' height={120} width={120}
+          src="/images/Foto_perfil.png"
+          height={120}
+          width={120}
         />
         <SectionTitle
           title="Conheça mais sobre mim."
@@ -34,7 +36,7 @@ const About = () => (
             data-aos-easing="ease-out-cubic"
             data-aos-duration="2000"
           >
-            {' '}
+            {" "}
             Estou muito animada em estar aqui e compartilhar um pouco sobre mim
             com vocês. Recentemente comecei minha carreira nessa área incrível e
             estou amando cada segundo. Minha paixão é trabalhar com React.js e

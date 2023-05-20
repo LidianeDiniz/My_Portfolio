@@ -1,5 +1,5 @@
-import { lighten } from 'polished';
-import { createGlobalStyle } from 'styled-components';
+import { lighten } from "polished";
+import { createGlobalStyle } from "styled-components";
 
 export default createGlobalStyle`
   * {
@@ -22,7 +22,7 @@ export default createGlobalStyle`
   }
 
   body {
-    background: ${props => props.theme.background};
+    background: ${(props) => props.theme.background};
     font: 400 1rem 'Montserrat', sans-serif;
   }
 

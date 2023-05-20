@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 interface ContainerProps {
   imgUrl: string;
@@ -8,7 +8,7 @@ export const Container = styled.div<ContainerProps>`
   > a {
     position: relative;
     width: 100%;
-    background: url(${props => props.imgUrl}) no-repeat center;
+    background: url(${(props) => props.imgUrl}) no-repeat center;
     background-size: cover;
     height: 13rem;
     padding: 1.5rem;

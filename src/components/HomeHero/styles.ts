@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Container = styled.section`
   display: flex;
@@ -15,12 +15,12 @@ export const Container = styled.section`
 
     //border: 10px solid ${({ theme }) => theme.primary};
 
-     .main {
-    display: flex;
-    flex-direction: column;
+    .main {
+      display: flex;
+      flex-direction: column;
 
-    gap: 8rem;
-  }
+      gap: 8rem;
+    }
   }
 
   @media (max-width: 1450px) {
@@ -108,7 +108,7 @@ export const InfoContainer = styled.span`
 `;
 
 export const InfoItem = styled.p`
-  font-size: 'JetBrains Mono', monospace;
+  font-size: "JetBrains Mono", monospace;
   font-weight: 300;
   color: ${({ theme }) => theme.text_secondary};
 
@@ -123,7 +123,7 @@ export const InfoItem = styled.p`
   font-size: 1.5rem;
 
   > span {
-    font-size: 'JetBrains Mono', monospace;
+    font-size: "JetBrains Mono", monospace;
     font-weight: 300;
     color: ${({ theme }) => theme.secondary};
 

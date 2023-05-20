@@ -1,5 +1,5 @@
-import { Container, InfoContainer, InfoItem, TextContainer } from './styles';
-import picture from '../../assets/Foto_perfil.png';
+import { Container, InfoContainer, InfoItem, TextContainer } from "./styles";
+import picture from "../../assets/Foto_perfil.png";
 
 function HomeHero() {
   return (

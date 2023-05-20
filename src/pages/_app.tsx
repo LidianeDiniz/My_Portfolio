@@ -1,8 +1,8 @@
-import NextNprogress from 'nextjs-progressbar';
-import { ThemeProvider } from 'styled-components';
-import GlobalStyles from '../styles/global';
-import theme from '../styles/theme';
-import { AppProps } from 'next/app';
+import NextNprogress from "nextjs-progressbar";
+import { ThemeProvider } from "styled-components";
+import { AppProps } from "next/app";
+import GlobalStyles from "../styles/global";
+import theme from "../styles/theme";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (

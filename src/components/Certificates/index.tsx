@@ -1,7 +1,7 @@
-import { FilePdf } from 'phosphor-react';
-import SectionTitle from '../SectionTitle';
-import CertificatesItem from './CertificatesItem';
-import { Container } from './styles';
+import { FilePdf } from "phosphor-react";
+import SectionTitle from "../SectionTitle";
+import CertificatesItem from "./CertificatesItem";
+import { Container } from "./styles";
 
 function Certificates() {
   return (

@@ -1,12 +1,12 @@
-import { FormEvent, useState } from 'react';
-import emailjs from '@emailjs/browser';
+import { FormEvent, useState } from "react";
+import emailjs from "@emailjs/browser";
 
-import { FormContainer, Input, TextArea } from './styles';
+import { FormContainer, Input, TextArea } from "./styles";
 
 export default function Form() {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
 
   async function handleSubmit(event: FormEvent) {
     event.preventDefault();
@@ -14,33 +14,34 @@ export default function Form() {
     const templateParams = {
       from_name: name,
       message,
-      email
+      email,
     };
 
     emailjs
       .send(
-        'service_aknw828',
-        'template_sp7d0rr',
+        "service_aknw828",
+        "template_sp7d0rr",
         templateParams,
-        '-jBhxQOlUuDISqKWu'
+        "-jBhxQOlUuDISqKWu"
       )
       .then(
-        response => {
-          console.log('EMAIL ENVIADO', response.status, response.text);
-          setName('');
-          setEmail('');
-          setMessage('');
+        (response) => {
+          console.log("EMAIL ENVIADO", response.status, response.text);
+          setName("");
+          setEmail("");
+          setMessage("");
           alert(`Mensagem foi encaminhada com sucesso ${name}!!!`);
         },
-        err => {
+        (err) => {
           alert(
-            'Sua mensagem não pode ser enviada, tente novamente mais tarde!'
+            "Sua mensagem não pode ser enviada, tente novamente mais tarde!"
           );
-          console.log('Erro', err);
+          console.log("Erro", err);
         }
       );
   }
   return (
+    // eslint-disable-next-line react/jsx-no-bind
     <FormContainer data-aos="fade-up" onSubmit={handleSubmit}>
       <Input
         placeholder="Nome"

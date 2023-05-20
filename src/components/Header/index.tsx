@@ -1,5 +1,5 @@
-import NavLink from './NavLink';
-import { Container } from './styles';
+import NavLink from "./NavLink";
+import { Container } from "./styles";
 
 function Header() {
   return (

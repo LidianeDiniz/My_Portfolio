@@ -1,11 +1,11 @@
-import { AiFillHtml5 } from 'react-icons/ai';
-import { FaCss3Alt, FaReact, FaWordpressSimple } from 'react-icons/fa';
-import { IoLogoJavascript } from 'react-icons/io5';
-import { SiStyledcomponents, SiTypescript } from 'react-icons/si';
-import { TbBrandNextjs } from 'react-icons/tb';
-import { Container } from './styles';
-import SectionTitle from '../SectionTitle';
-import SkillItens from './SkillItens';
+import { AiFillHtml5 } from "react-icons/ai";
+import { FaCss3Alt, FaReact, FaWordpressSimple } from "react-icons/fa";
+import { IoLogoJavascript } from "react-icons/io5";
+import { SiStyledcomponents, SiTypescript } from "react-icons/si";
+import { TbBrandNextjs } from "react-icons/tb";
+import { Container } from "./styles";
+import SectionTitle from "../SectionTitle";
+import SkillItens from "./SkillItens";
 
 function SkillLanguages() {
   return (

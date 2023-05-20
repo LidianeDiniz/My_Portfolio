@@ -1,5 +1,4 @@
-import styled from 'styled-components';
-
+import styled from "styled-components";
 
 export const ProjectsContainer = styled.div`
   width: 100%;
@@ -22,7 +21,7 @@ export const ProjectsContainer = styled.div`
       h1 {
         color: ${({ theme }) => theme.primary};
         font-size: 2rem;
-        font-family: 'Montserrat', sans-serif;
+        font-family: "Montserrat", sans-serif;
         font-weight: 600;
       }
 
