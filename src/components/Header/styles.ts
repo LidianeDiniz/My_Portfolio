@@ -1,5 +1,5 @@
-import { lighten } from "polished";
-import styled from "styled-components";
+import { lighten } from 'polished';
+import styled from 'styled-components';
 
 interface NaviLinkProps {
   isActive: boolean;
@@ -23,12 +23,12 @@ export const Container = styled.header`
 export const NavLinkContainer = styled.li<NaviLinkProps>`
   a {
     text-transform: uppercase;
-    color: ${(props) =>
+    color: ${props =>
       props.isActive ? props.theme.primary : props.theme.textlight};
     transition: 0.5s;
 
     &:hover {
-      color: ${(props) =>
+      color: ${props =>
         props.isActive
           ? lighten(0.2, props.theme.primary)
           : lighten(0.2, props.theme.textlight)};

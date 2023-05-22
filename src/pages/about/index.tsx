@@ -2,6 +2,7 @@
 // import picture from '../../assets/Foto_perfil.png';
 // import Header from '../components/Header';
 
+import Certificates from "../../components/Certificates";
 import {
   Container,
   Subtitle,
@@ -13,10 +14,14 @@ import SectionTitle from "../../components/SectionTitle";
 import { Footer } from "../../components/Footer";
 import Header from "../../components/Header";
 
+import SkillLanguages, {  } from "../../components/SkillsLanguages";
+
 const About = () => (
   <Container>
-    <Header />
+  
+      <Header />
     <TextContainer data-aos="zoom-out-right">
+      
       <div className="ContainerBox">
         <ProfileImage
           data-aos="fade-left"
@@ -58,7 +63,10 @@ const About = () => (
           </h2>
         </Subtitle>
       </TextDescription>
+
     </TextContainer>
+      <Certificates/>
+      <SkillLanguages/>
     <Footer />
   </Container>
 );

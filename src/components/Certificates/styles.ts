@@ -1,17 +1,19 @@
 import styled from 'styled-components';
 
-export const Container = styled.section`
+export const Container = styled.div`
   width: 100%;
+  
 
   > div .containerTitle {
     display: flex;
+    justify-content: center;
   }
 
   > section {
     width: 100%;
     margin-top: 7rem;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
     padding-bottom: 8rem;
     justify-items: center;
@@ -28,7 +30,7 @@ export const Container = styled.section`
       left: auto;
     }
 
-    @media (max-width: 780px) {
+    @media (max-width: 980px) {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       margin-top: 5rem;
@@ -37,12 +39,21 @@ export const Container = styled.section`
     }
 
     @media (max-width: 680px) {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
-      margin-top: 5rem;
-      gap: 2rem;
+      width: auto;
+       display: flex;
+       justify-content: center;
+       flex-direction: column;
+       align-items: center;
+       align-items: stretch;
+       
+
+      > div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40rem;
+
+      }
     }
   }
 `;

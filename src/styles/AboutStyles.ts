@@ -1,16 +1,41 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  margin-top: 5rem;
+
   width: 100%;
   display: flex;
   align-items: center;
-  padding: 0 5rem;
+  margin: auto;
   justify-content: center;
-  flex-direction: row-reverse;
-  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 3rem;
+
+  > section .SkillTypes{
+    width: auto;
+
+    svg {
+    width: 2.5rem;
+    height: 2.5rem;
+    color: ${({ theme }) => theme.textlight};
+    transition: 2s;
+
+    &:hover {
+     
+      color: ${({ theme }) => theme.text};
+      transform: scale(0.95);
+    
+    }
+  }
+
+ 
+
+  }
 
   @media (max-width: 1450px) {
+    width: 100%;
+  display: flex;
+  align-items: center;
+  margin: auto;
     > img {
       width: 18rem;
     }
@@ -28,11 +53,41 @@ export const Container = styled.div`
     align-items: center;
     justify-content: center;
     width: 100%;
+    padding: 1rem;
 
-    > img {
-      width: 15rem;
+   > header{
+   
+    ul li{
+      width: auto;
+    
+      display: flex;
     }
+
+    @media (max-width: 380px) {
+
+      width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2rem;
+  border-bottom: 1px solid ${({ theme }) => theme.backgroundLight};
+
+  ul {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
   }
+  li{
+    font-size: 0.9rem;
+  }
+    }
+    }
+    
+    
+
+    
+   }
+  
 `;
 
 export const ProfileImage = styled.img`
@@ -53,7 +108,8 @@ export const TextContainer = styled.div`
   width: 100%;
   justify-content: center;
   align-items: center;
-  margin-top: auto;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
 
   .ContainerBox {
     width: 100%;
@@ -74,6 +130,8 @@ export const TextContainer = styled.div`
     }
 
     @media (max-width: 480px) {
+
+      
       > img {
         display: none;
       }
@@ -99,24 +157,40 @@ export const TextContainer = styled.div`
           font-size: 1.3rem;
         }
       }
+
+      @media (max-width: 480px) {
+        h1 {
+          font-size: 1rem;
+        }
+
+        h2 {
+          font-size: 0.8rem;
+        }
+      }
     }
   }
 `;
 
 export const TextDescription = styled.div`
-  height: auto;
+  
 
   width: 100%;
   border-radius: 18px;
   display: flex;
-  justify-content: center;
+ 
   align-items: center;
-  padding: 2rem;
+ 
   background: ${({ theme }) => theme.gradient_secondary};
   margin-top: 2rem;
 
   border: 10px solid ${({ theme }) => theme.secondary};
   transition: 1s;
+
+  @media (max-width: 680px) {
+  
+    border: 2px solid ${({ theme }) => theme.secondary};
+   
+  }
 
   &:hover {
     border: 12px solid ${({ theme }) => theme.text_secondary};
@@ -126,14 +200,25 @@ export const TextDescription = styled.div`
 `;
 
 export const Subtitle = styled.h2`
-  font-size: 1.3rem;
+  
   color: ${({ theme }) => theme.textlight};
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+ 
   transition: 0.5s;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+  >h2{
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100;
+    height: auto;
+    padding: 1.5rem;
+
+    @media (max-width: 680px) {
+    font-size: 0.8rem;
+    width: auto;
+    
+  }
 
   @media (max-width: 980px) {
     font-size: 0.8rem;
@@ -143,7 +228,9 @@ export const Subtitle = styled.h2`
     width: 100%;
   }
 
-  @media (max-width: 680px) {
-    font-size: 0.5rem;
   }
+ 
+
+ 
+ 
 `;

@@ -105,6 +105,7 @@ export const InfoContainer = styled.span`
   flex-direction: column;
   gap: 1rem;
   align-self: self-start;
+   
 `;
 
 export const InfoItem = styled.p`
@@ -152,8 +153,7 @@ export const InfoItem = styled.p`
   }
 
   @media (max-width: 680px) {
-    width: 100%;
-    font-size: 1.5rem;
+    width: auto;
     display: flex;
     justify-content: center;
     align-items: center;

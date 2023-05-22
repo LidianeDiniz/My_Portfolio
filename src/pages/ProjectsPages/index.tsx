@@ -20,9 +20,9 @@ function ProjectsPage() {
           <SectionTitle
             title="Confira aqui meus melhores projetos!"
             description=" Ainda estou criando meu portfólio aos poucos mais ja tem alguns trabalhos maneiros por aqui. Estou sempre inovando e aprimorando minhas habilidades, então fique de olho que sempre tem novidades chegando. Se quiser dar uma conferida em mais projetos que já fiz, dá uma olhada lá no meu GitHub também. Bora trocar uma ideia sobre design e desenvolvimento? É só chamar!"
-          />
-        </div>
-
+            />
+            </div>
+        
         <ProjectsItensContainer>
           <ProjectItem
             title="Desafio concluído"
@@ -65,6 +65,7 @@ function ProjectsPage() {
             imgUrl="https://amecafemantiqueira.com.br/wp-content/uploads/2021/06/top-imagem-amecafe-2.png"
           />
         </ProjectsItensContainer>
+
       </main>
     </ProjectsContainer>
   );

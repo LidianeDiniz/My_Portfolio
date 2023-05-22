@@ -10,7 +10,7 @@ interface CertificatesProps {
   slug?: string;
 }
 
-function CerificateItem({
+function CerificatesItem({
   year,
   title,
   description,
@@ -33,4 +33,4 @@ function CerificateItem({
   );
 }
 
-export default CerificateItem;
+export default CerificatesItem;

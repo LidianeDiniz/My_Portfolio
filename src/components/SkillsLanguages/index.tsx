@@ -11,7 +11,7 @@ function SkillLanguages() {
   return (
     <Container>
       <SectionTitle title="Linguagens que Domino" />
-      <section>
+      <section className="SkillTypes">
         <SkillItens title="HTML" icon={<AiFillHtml5 />} />
         <SkillItens title="CSS" icon={<FaCss3Alt />} />
         <SkillItens title="Javascript" icon={<IoLogoJavascript />} />
