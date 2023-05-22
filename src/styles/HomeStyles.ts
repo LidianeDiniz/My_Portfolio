@@ -5,6 +5,12 @@ export const HomeContainer = styled.div`
   flex-direction: column;
   width: 100%;
   height: 100%;
+
+  @media (max-width:680px){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
  
   > main {
     display: flex;
