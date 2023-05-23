@@ -11,6 +11,7 @@ export const ProjectsContainer = styled.div`
   @media (max-width:680px){
    
     >header{
+      width: auto;
           ul li{
             a {
               font-size: 0.6rem;

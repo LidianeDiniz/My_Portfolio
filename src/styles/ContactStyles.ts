@@ -16,9 +16,10 @@ export const Contents = styled.div`
  
  @media (max-width:680px){
   >header{
+    width: auto;
           ul li{
             a {
-              font-size: 0.8rem;
+              font-size: 0.6rem;
             }
           }
         }

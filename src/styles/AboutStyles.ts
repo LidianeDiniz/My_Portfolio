@@ -72,11 +72,13 @@ export const Container = styled.div`
 
    > header{
    
-    ul li{
-      width: auto;
-    
-      display: flex;
-    }
+    width: auto;
+          ul li{
+            a {
+              font-size: 0.6rem;
+            }
+          }
+        
 
     @media (max-width: 380px) {
 
