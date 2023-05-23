@@ -11,6 +11,7 @@ export const Container = styled.section`
     align-items: center;
     justify-content: center;
     margin-top: 8rem;
+    margin-bottom: 8rem;
 
     gap: 8rem;
 

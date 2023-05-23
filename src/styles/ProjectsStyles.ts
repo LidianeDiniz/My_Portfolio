@@ -1,29 +1,35 @@
 import styled from "styled-components";
 
 export const ProjectsContainer = styled.div`
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+ display: flex;
   flex-direction: column;
-  margin-top: 1rem;
-  margin-bottom: auto;
+  width: 100%;
 
-  .container {
-    display: flex;
-    margin-top: auto;
-    justify-content: center;
-    width: 100%;
-    margin-top: 2rem;
-    padding: 0 auto;
-    flex-wrap: wrap;
+
+ 
+
+  @media (max-width:680px){
+   
+    >header{
+          ul li{
+            a {
+              font-size: 0.6rem;
+            }
+          }
+        }
+         div.LinkProjects  {
+          flex-direction: column;
+    
+      height: auto;
+      gap: 1rem;
+      margin-top: 0.5rem;
+      margin-bottom: 5rem;
+        }
+      }
 
     div.Title {
       > section {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
+       
         margin-bottom: 3rem;
       }
       h1 {
@@ -31,9 +37,10 @@ export const ProjectsContainer = styled.div`
         font-size: 2rem;
         font-family: "Montserrat", sans-serif;
         font-weight: 600;
+        margin-top: 3rem;
 
         @media (max-width: 680px) {
-          font-size: 1.5rem;
+          font-size: 1.2rem;
         }
       }
 
@@ -43,14 +50,20 @@ export const ProjectsContainer = styled.div`
         font-weight: 300;
 
         @media (max-width: 680px) {
-          font-size: 1rem;
+          font-size: 0.8rem;
+          
         }
+
+        
       }
+
+     
+     
+
     }
 
-    justify-content: center;
-    flex-direction: column;
-  }
+    
+  
 `;
 
 export const ProjectsItensContainer = styled.div`
@@ -73,16 +86,11 @@ export const ProjectsItensContainer = styled.div`
 
   @media (max-width: 680px) {
     display: contents;
-
+    
     justify-content: center;
     align-items: center;
     width: 100%;
 
-    > footer{
-      display: flex;
-      width: auto;
-      justify-content: space-between;
-      gap: 15rem;
-    }
+    
   }
 `;

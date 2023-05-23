@@ -19,7 +19,7 @@ export function ProjectItem({
   imgUrl,
   slug,
   repUrl,
-  isSubmitting,
+  isSubmitting
 }: ProjectItemProps) {
   return (
     <Container imgUrl={imgUrl}>

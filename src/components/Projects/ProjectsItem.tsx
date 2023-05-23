@@ -2,6 +2,7 @@ import Link from "next/link";
 import { CaretDoubleRight } from "phosphor-react";
 import { ProjectContainer } from "./styles";
 
+
 interface ProjectsProps {
   title: string;
   type: string;
@@ -26,6 +27,8 @@ export function ProjectsItem({ title, type, slug, img }: ProjectsProps) {
           </a>
         </Link>
       </button>
+
+   
     </ProjectContainer>
   );
 }

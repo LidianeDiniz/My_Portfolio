@@ -51,8 +51,9 @@ export default createGlobalStyle`
     @media(max-width:1450px) {
       max-width: 70rem;
     }
+
     @media(max-width:1000px) {
-      max-width: 50rem;
+      width: 100%;
     }
     @media(max-width:700px) {
   width: 100%;

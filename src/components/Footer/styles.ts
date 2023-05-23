@@ -9,13 +9,6 @@ export const Container = styled.footer`
   margin-top: 10rem;
   border-top: 1px solid ${({ theme }) => theme.backgroundLight};
 
-  .main {
-      display: flex;
-      flex-direction: column;
-      width: max-content;
-      gap: 8rem;
-    }
-
   > div {
     display: flex;
     justify-content: space-between;
