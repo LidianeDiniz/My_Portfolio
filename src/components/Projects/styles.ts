@@ -18,12 +18,6 @@ export const Container = styled.section`
     flex-direction: column;
     gap: 4rem;
 
-    @media (max-width: 680px) {
-      display: flex;
-      width: 100%;
-      gap: 2rem;
-    }
-
     @media (max-width: 980px) {
       gap: 2rem;
     }
@@ -64,7 +58,8 @@ export const ProjectContainer = styled.div<ProjectProps>`
   display: flex;
   height: 25rem;
   align-items: flex-end;
- 
+  position: relative;
+
   &:hover {
     > section {
       > div.text {
@@ -103,7 +98,7 @@ export const ProjectContainer = styled.div<ProjectProps>`
     height: 100%;
     background: url(${(props) => props.imgUrl}) no-repeat center;
     background-size: cover;
-   
+    position: relative;
 
     > div.overlay {
       position: absolute;

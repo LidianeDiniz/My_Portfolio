@@ -1,7 +1,15 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  width: 100%;
+  width: fit-content;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+
+  > section h1{
+    width: 100%;
+  }
   
 
   > div .containerTitle {

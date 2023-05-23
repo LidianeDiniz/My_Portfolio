@@ -8,8 +8,6 @@ export const ProjectsContainer = styled.div`
   flex-direction: column;
   margin-top: 1rem;
   margin-bottom: auto;
-  
-  
 
   .container {
     display: flex;
@@ -21,8 +19,7 @@ export const ProjectsContainer = styled.div`
     flex-wrap: wrap;
 
     div.Title {
-
-      >section{
+      > section {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -30,15 +27,13 @@ export const ProjectsContainer = styled.div`
         margin-bottom: 3rem;
       }
       h1 {
-       
         color: ${({ theme }) => theme.primary};
         font-size: 2rem;
         font-family: "Montserrat", sans-serif;
         font-weight: 600;
 
-        @media(max-width: 680px){
+        @media (max-width: 680px) {
           font-size: 1.5rem;
-
         }
       }
 
@@ -47,26 +42,18 @@ export const ProjectsContainer = styled.div`
         font-size: 1.5rem;
         font-weight: 300;
 
-        @media(max-width: 680px){
+        @media (max-width: 680px) {
           font-size: 1rem;
-
         }
       }
     }
 
     justify-content: center;
     flex-direction: column;
-
-
-    
   }
-
-
- 
 `;
 
 export const ProjectsItensContainer = styled.div`
-
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 2rem;
@@ -74,26 +61,21 @@ export const ProjectsItensContainer = styled.div`
 
   @media (max-width: 1280px) {
     display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 2rem;
- 
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
   }
 
   @media (max-width: 980px) {
     display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 2rem;
- 
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
   }
 
-
-
   @media (max-width: 680px) {
-  display: contents;
- 
-  justify-content: center;
-  align-items: center;
-  width: 100%;
- 
+    display: contents;
+
+    justify-content: center;
+    align-items: center;
+    width: 100%;
   }
 `;

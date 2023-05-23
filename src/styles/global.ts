@@ -55,7 +55,9 @@ export default createGlobalStyle`
       max-width: 50rem;
     }
     @media(max-width:700px) {
-      padding: 0 2rem;
+  width: auto;
+  padding: 0 auto;
+  
     }
   }
 
