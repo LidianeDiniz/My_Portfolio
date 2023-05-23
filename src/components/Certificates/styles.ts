@@ -52,13 +52,14 @@ export const Container = styled.div`
       gap: 2rem;
     }
 
-    @media (max-width: 680px) {
-      width: 100%;
-       display: flex;
-       justify-content: center;
-       flex-direction: column;
-       align-items: center;
-       align-items: stretch;
+    
+      @media (max-width: 680px) {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
        
 
       > div{
@@ -69,7 +70,7 @@ export const Container = styled.div`
 
       }
     }
-  }
+  
 `;
 
 export const ItemContainer = styled.div`

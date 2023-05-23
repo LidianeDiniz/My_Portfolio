@@ -5,6 +5,14 @@ export const HomeContainer = styled.div`
   flex-direction: column;
   width: 100%;
   height: 100%;
+  flex-wrap: wrap;
+
+  @media (max-width: 480px) {
+    width: 100%;
+    display: inline-grid;
+    
+  }
+
  
   > .main {
     display: flex;

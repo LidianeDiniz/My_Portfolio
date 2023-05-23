@@ -13,10 +13,13 @@ export const Container = styled.header`
   height: 4rem;
   border-bottom: 1px solid ${({ theme }) => theme.backgroundLight};
 
+  
   ul {
     display: flex;
     gap: 2rem;
     align-items: center;
+
+    
   }
 `;
 
@@ -34,5 +37,12 @@ export const NavLinkContainer = styled.li<NaviLinkProps>`
           : lighten(0.2, props.theme.textlight)};
       border-bottom: 1px solid ${({ theme }) => theme.primary};
     }
+
+    @media (max-width: 480px) {
+    width: 100%;
+    display: contents;
+    
+  }
+
   }
 `;
