@@ -12,6 +12,8 @@ export const Container = styled.section`
   align-items: center;
   gap: 5rem;
 
+ 
+
   > section {
     width: 100%;
     display: flex;

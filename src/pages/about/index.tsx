@@ -63,9 +63,9 @@ const About = () => (
           </h2>
         </Subtitle>
       </TextDescription>
-
     </TextContainer>
       <Certificates/>
+
       <SkillLanguages/>
     <Footer />
   </Container>

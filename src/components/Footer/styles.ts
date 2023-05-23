@@ -9,6 +9,13 @@ export const Container = styled.footer`
   margin-top: 10rem;
   border-top: 1px solid ${({ theme }) => theme.backgroundLight};
 
+  .main {
+      display: flex;
+      flex-direction: column;
+      width: max-content;
+      gap: 8rem;
+    }
+
   > div {
     display: flex;
     justify-content: space-between;
@@ -24,7 +31,6 @@ export const Container = styled.footer`
 
       display: flex;
       align-items: center;
-      justify-content: space-between;
       gap: 0.5rem;
       transition: 0.5s;
 
@@ -37,10 +43,6 @@ export const Container = styled.footer`
         color: ${({ theme }) => darken(0.4, theme.secondary)};
         font-size: 1.5rem;
       }
-
-      @media (max-width: 450px){
-        gap:30rem;
-      }
     }
 
     > section {
@@ -52,8 +54,6 @@ export const Container = styled.footer`
 
       font-size: 1.5rem;
       transition: 0.5s;
-
-      
 
       svg {
         width: 2rem;
@@ -69,12 +69,9 @@ export const Container = styled.footer`
           border-radius: 4px;
         }
       }
-
-     
     }
 
     @media (max-width: 450px) {
-     
       button {
         font-size: 0.9rem;
       }

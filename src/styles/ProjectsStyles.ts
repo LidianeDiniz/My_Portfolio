@@ -77,5 +77,12 @@ export const ProjectsItensContainer = styled.div`
     justify-content: center;
     align-items: center;
     width: 100%;
+
+    > footer{
+      display: flex;
+      width: auto;
+      justify-content: space-between;
+      gap: 15rem;
+    }
   }
 `;

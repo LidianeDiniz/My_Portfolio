@@ -2,6 +2,7 @@ import Head from "next/head";
 import Header from "../../components/Header";
 import { ProjectItem } from "../../components/ProjectItem";
 import SectionTitle from "../../components/SectionTitle";
+import { Footer } from '../../components/Footer/index';
 import {
   ProjectsContainer,
   ProjectsItensContainer,
@@ -67,6 +68,7 @@ function ProjectsPage() {
         </ProjectsItensContainer>
 
       </main>
+      <Footer/>
     </ProjectsContainer>
   );
 }

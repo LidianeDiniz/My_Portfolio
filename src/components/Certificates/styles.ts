@@ -1,12 +1,18 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  width: fit-content;
+  width: 100%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
 
+  .main {
+      display: flex;
+      flex-direction: column;
+
+      gap: 8rem;
+    }
   > section h1{
     width: 100%;
   }
@@ -47,7 +53,7 @@ export const Container = styled.div`
     }
 
     @media (max-width: 680px) {
-      width: auto;
+      width: 100%;
        display: flex;
        justify-content: center;
        flex-direction: column;
@@ -59,7 +65,7 @@ export const Container = styled.div`
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 40rem;
+        
 
       }
     }

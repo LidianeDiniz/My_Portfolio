@@ -8,8 +8,23 @@ export const Container = styled.div`
   margin: auto;
   justify-content: center;
   flex-direction: column;
-  padding: 3rem;
+  padding: 0rem;
 
+ >section {
+      h1{
+        display: flex;
+      justify-content: center;
+      align-items: center;
+    margin-left: 5rem;
+      
+  @media (max-width:450px){
+    h1{
+        font-size: 3rem;
+        color: red;
+    }
+  }
+}}
+  
   > section .SkillTypes{
     width: auto;
 
@@ -83,7 +98,7 @@ export const Container = styled.div`
     }
     }
     
-    
+   
 
     
    }
@@ -110,6 +125,10 @@ export const TextContainer = styled.div`
   align-items: center;
   margin-top: 2rem;
   margin-bottom: 5rem;
+
+  
+
+  
 
   .ContainerBox {
     width: 100%;
