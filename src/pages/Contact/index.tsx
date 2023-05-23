@@ -6,18 +6,18 @@ import Header from "../../components/Header";
 import SectionTitle from "../../components/SectionTitle";
 
 import { Footer } from "../../components/Footer/index";
-import { Container, Button } from "../../styles/ContactStyles";
+import { Container, Button, Contents } from "../../styles/ContactStyles";
 
 function Contact() {
   function handleRedirect(url: string) {
     window.open(url);
   }
   return (
-    <div>
+    <Contents>
+      <Header />
       <Head>
         <title>Fale comigo</title>
       </Head>
-      <Header />
       <Container>
         <SectionTitle
           title={<>Descubra os links para nossa conexão!</>}
@@ -66,7 +66,7 @@ function Contact() {
         </ul>
         <Footer />
       </Container>
-    </div>
+    </Contents>
   );
 }
 

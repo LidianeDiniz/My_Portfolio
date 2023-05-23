@@ -1,5 +1,33 @@
 import styled from "styled-components";
 
+export const Contents = styled.div`
+
+@media (max-width:980px){
+
+  >header{
+          ul li{
+            a {
+              font-size: 0.8rem;
+            }
+          }
+        }
+       
+}
+ 
+ @media (max-width:680px){
+  >header{
+          ul li{
+            a {
+              font-size: 0.8rem;
+            }
+          }
+        }
+
+ }
+
+ 
+`;
+
 export const Container = styled.div`
   width: 100%;
   display: flex;
@@ -7,10 +35,10 @@ export const Container = styled.div`
   align-items: center;
 
   justify-content: center;
-  padding: 5rem;
+  padding: 2rem;
   flex-direction: column;
   color: ${({ theme }) => theme.backgroundLight};
-  margin-top: 10rem;
+  margin-top: 3rem;
 
   @media (max-width: 980px) {
     display: flex;
@@ -162,3 +190,4 @@ export const Button = styled.button`
     padding: 0 auto;
   }
 `;
+

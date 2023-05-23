@@ -54,7 +54,7 @@ export const Container = styled.div`
 
     
       @media (max-width: 680px) {
-    width: 100%;
+    width: 40rem;
     display: flex;
     justify-content: center;
     align-items: center;
