@@ -17,13 +17,9 @@ export const Container = styled.div`
       align-items: center;
     margin-left: 5rem;
       
-  @media (max-width:450px){
-    h1{
-        font-size: 3rem;
-        color: red;
-    }
+ 
   }
-}}
+}
   
   > section .SkillTypes{
     width: auto;

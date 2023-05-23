@@ -1,70 +1,55 @@
 import styled from "styled-components";
 
 export const ProjectsContainer = styled.div`
- display: flex;
+  display: flex;
   flex-direction: column;
   width: 100%;
 
-
- 
-
-  @media (max-width:680px){
-   
-    >header{
+  @media (max-width: 680px) {
+    > header {
       width: auto;
-          ul li{
-            a {
-              font-size: 0.6rem;
-            }
-          }
+      ul li {
+        a {
+          font-size: 0.6rem;
         }
-         div.LinkProjects  {
-          flex-direction: column;
-    
+      }
+    }
+    div.LinkProjects {
+      flex-direction: column;
+
       height: auto;
       gap: 1rem;
       margin-top: 0.5rem;
       margin-bottom: 5rem;
-        }
+    }
+  }
+
+  div.Title {
+    > section {
+      margin-bottom: 3rem;
+    }
+    h1 {
+      color: ${({ theme }) => theme.primary};
+      font-size: 2rem;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 600;
+      margin-top: 3rem;
+
+      @media (max-width: 680px) {
+        font-size: 1.2rem;
       }
-
-    div.Title {
-      > section {
-       
-        margin-bottom: 3rem;
-      }
-      h1 {
-        color: ${({ theme }) => theme.primary};
-        font-size: 2rem;
-        font-family: "Montserrat", sans-serif;
-        font-weight: 600;
-        margin-top: 3rem;
-
-        @media (max-width: 680px) {
-          font-size: 1.2rem;
-        }
-      }
-
-      h2 {
-        color: ${({ theme }) => theme.textlight};
-        font-size: 1.5rem;
-        font-weight: 300;
-
-        @media (max-width: 680px) {
-          font-size: 0.8rem;
-          
-        }
-
-        
-      }
-
-     
-     
-
     }
 
-    
-  
+    h2 {
+      color: ${({ theme }) => theme.textlight};
+      font-size: 1.5rem;
+      font-weight: 300;
+
+      @media (max-width: 680px) {
+        font-size: 0.8rem;
+      }
+    }
+  }
 `;
 
 export const ProjectsItensContainer = styled.div`
@@ -86,12 +71,10 @@ export const ProjectsItensContainer = styled.div`
   }
 
   @media (max-width: 680px) {
-    display: contents;
-    
+    display: inline-block;
+    gap: 1.5rem;
     justify-content: center;
     align-items: center;
     width: 100%;
-
-    
   }
 `;
